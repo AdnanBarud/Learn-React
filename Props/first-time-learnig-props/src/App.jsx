@@ -14,7 +14,7 @@ function App() {
     <div>
       <Count>
         <h1>Count: {count}</h1>
-        <Button handelClick={handelClick}> Click Me</Button>
+        <Button handelClick={handelClick}> Click Me Adnan</Button>
       </Count>
     </div>
   )
