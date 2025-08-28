@@ -10,7 +10,8 @@ function App() {
 
   return (
    <div>
-      <Card1 name={name} setName={setName} />
+      <Card1 name={name} setName={setName} title={"Card1"} />
+      <Card1 name={name}  title={"Card2"} />
    </div>
   )
 }
