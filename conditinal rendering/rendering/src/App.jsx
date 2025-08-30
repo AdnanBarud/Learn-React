@@ -1,16 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Logout from './components/Logout'
+import Login from './components/Login'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const [IsLoggedIn, setIsLoggedIn] = useState(true)
 
-  return (
-    <>
-      
-    </>
-  )
+ 
+      if(IsLoggedIn){
+        return( 
+        <div> <Logout /> </div>
+        )
+      }
+      else{
+        return(
+          <div> <Login /> </div>
+        )
+      }
+    
+  
 }
 
 export default App
