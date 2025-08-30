@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-      {IsLoggedIn && <Logout /> }
+      {IsLoggedIn && <Logout /> }d
     </div>
   )
 
