@@ -32,7 +32,7 @@ function App() {
 
     </div>
     
-    <h1>Number of clicks: {click}</h1>
+    <h1>Number of Clicks: {click}</h1>
    </div>
   )
 }
