@@ -7,10 +7,19 @@ function App() {
   function handelClick(){
     alert("button clicked");
   }
+
+  function handelSubmit(e){
+    e.preventDefault();
+    alert("form submitted");
+  }
   return (
     <div>
       
-
+    <form >
+      <input type="text"  />
+      {/* <input type="password" placeholder='password' /> */}
+      <input type="submit" value="submit" onClick={handelSubmit}/>
+    </form>
     <button onClick={handelClick}>
       click me
     </button>
