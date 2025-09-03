@@ -9,7 +9,10 @@ function App() {
   //  alert(`i will run on every render`)
   // })
 
-  
+  // variontion 2
+  useEffect(() => {
+   alert(`i will run only once`)
+  }, [])
   
   function handleClick() {
     setCount(count + 1)
