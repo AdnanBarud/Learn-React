@@ -10,9 +10,14 @@ function App() {
   // })
 
   // variontion 2
+  // useEffect(() => {
+  //  alert(`i will run only once`)
+  // }, [])
+  
+  // variontion 3
   useEffect(() => {
-   alert(`i will run only once`)
-  }, [])
+    alert(`i will run when count changes`)
+  }, [count])
   
   function handleClick() {
     setCount(count + 1)
