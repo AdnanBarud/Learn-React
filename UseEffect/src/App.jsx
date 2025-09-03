@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
    alert(`You clicked ${count} times`)
-  },[])
+  },[count])
   
   function handleClick() {
     setCount(count + 1)
