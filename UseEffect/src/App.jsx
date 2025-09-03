@@ -4,9 +4,12 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  useEffect(() => {
-   alert(`You clicked ${count} times`)
-  },[count])
+  // variontion 1
+  // useEffect(() => {
+  //  alert(`i will run on every render`)
+  // })
+
+  
   
   function handleClick() {
     setCount(count + 1)
