@@ -35,7 +35,7 @@ function App() {
   return (
     <div>
       <button onClick={handleClick}>Click me</button>
-      <p>Count is: {count}</p>
+      //<p>Count is: {count}</p>
        <button onClick={handleTotal}>Click me</button>
       <p>Count is: {total}</p>
     </div>
