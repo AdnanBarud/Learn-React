@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <button>hg</button>
+      
     </div>
   )
 }
