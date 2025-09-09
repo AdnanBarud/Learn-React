@@ -2,10 +2,11 @@ import { useState, createContext } from 'react'
 import './App.css'
 import ChildA from './components/ChildA'
 
+  const UserContext=createContext();
+
 function App() {
   
   //1create a Context
-  const UserContext=createContext();
   //2.wrap all the components in the provider
 
   //3. pass the value to the provider
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App
+export {UserContext}
