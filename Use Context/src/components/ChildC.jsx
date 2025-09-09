@@ -2,7 +2,9 @@ import React from 'react'
 
 const ChildC = () => {
   return (
-    <div>ChildC</div>
+    <div>
+        hello
+    </div>
   )
 }
 
