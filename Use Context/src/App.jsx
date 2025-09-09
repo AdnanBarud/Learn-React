@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <UserContext.Provider>
+      <UserContext.Provider value={data}>
         <ChildA />
       </UserContext.Provider>
     </div>
