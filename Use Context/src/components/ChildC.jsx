@@ -5,7 +5,7 @@ const ChildC = () => {
     const data=useContext(UserContext);
   return (
     <div>
-        s
+        ss
         data: {data}
     
     </div>
