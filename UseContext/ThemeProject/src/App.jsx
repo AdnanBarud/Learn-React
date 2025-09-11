@@ -11,10 +11,13 @@ function App() {
 
   return (
    <div>
-    <ThemeContext.Provider value={{theme,setTheme}}>
-      <ChildA />
+    <ThemeContext.Provider value={{theme,setTheme}} >
+      <div id='app'>
+        <ChildA/>
+      </div>
     </ThemeContext.Provider>   </div>
   )
 }
 
 export default App
+export {ThemeContext};

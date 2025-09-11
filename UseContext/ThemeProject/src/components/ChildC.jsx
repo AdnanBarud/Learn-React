@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../App';
 
 const ChildC = () => {
+  const {theme,setTheme}=useContext(ThemeContext);
   return (
     <div>
-        ChildC
+      
+        <button>Change Theme</button>
     </div>
   )
 }
