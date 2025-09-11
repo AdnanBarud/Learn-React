@@ -11,8 +11,9 @@ function App() {
 
   return (
    <div>
-    <ChildA />
-   </div>
+    <ThemeContext.Provider value={{theme,setTheme}}>
+      <ChildA />
+    </ThemeContext.Provider>   </div>
   )
 }
 
