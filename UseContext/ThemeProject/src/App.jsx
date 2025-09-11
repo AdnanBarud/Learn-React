@@ -12,7 +12,7 @@ function App() {
   return (
    <div>
     <ThemeContext.Provider value={{theme,setTheme}} >
-      <div id='app'>
+      <div id='app'style={{ backgroundColor: theme === "light" ? "beige" : "black" }}>
         <ChildA/>
       </div>
     </ThemeContext.Provider>   </div>
