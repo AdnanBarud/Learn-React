@@ -19,7 +19,14 @@ function App() {
      <form action="" onSubmit={handleSubmit(onsubmit)}>
       <div>
         <label >First Name</label>
-        <input type="text" {...register('first name')}/>
+        <input type="text" 
+        {...register('firstname',
+        { required: true,
+          minLength: {value: 3, message: "Min length is 3"},   
+          maxLength: {value: 7, message: "max length is 7"} },
+          
+        )}/>
+        {errors.firstname && <p>{errors.firstname.message}</p>}
       </div>
       <div>
         <label >Middel Name</label>
