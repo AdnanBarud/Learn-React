@@ -7,10 +7,11 @@ function App() {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
-  function onsubmit(data){
+  async function onsubmit(data){
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     console.log(data);
   }
 
@@ -37,7 +38,8 @@ function App() {
         <label >Last Name</label>
         <input type="text" {...register('last name')}/>
       </div>
-      <input type="submit" value="Submit"/>
+      <input type="submit" disabled={isSubmitting}
+      value={isSubmitting ? 'submitting' : 'submit'}/>
      </form>
    </div>
   )
