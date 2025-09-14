@@ -32,11 +32,17 @@ function App() {
       </div>
       <div>
         <label >Middel Name</label>
-        <input type="text" {...register('middle name')}/>
+        <input type="text" {...register('middlename')}/>
       </div>
       <div>
         <label >Last Name</label>
-        <input type="text" {...register('last name')}/>
+        <input type="text" {...register('lastname', {
+          patterns: {
+            value: /^[A-Za-z]+$/i,
+            message: "Alphabetical characters only"
+          }
+})}/>
+        {errors.lastname && <p className="error-msg">{errors.lastname.message}</p>} 
       </div>
       <input type="submit" disabled={isSubmitting}
       value={isSubmitting ? 'submitting' : 'submit'}/>
