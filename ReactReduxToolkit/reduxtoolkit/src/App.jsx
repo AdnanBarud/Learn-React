@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState,  } from 'react'
 import './App.css'
+import { useSelector, useDispatch } from 'react-redux'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const count = useSelector((state) => state.counter.value);
+  const dispatch= useDispatch();
+
+  function handlClick() {
+    
+  }
 
   return (
     <div>
-      hello
+      <button onClick={handlClick}>+</button>
+      <p>Count: {count}</p>
+      <button onClick={handlClick}>-</button>
     </div>
   )
 }
