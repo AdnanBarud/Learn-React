@@ -15,21 +15,27 @@ function App() {
   //   btnRef.current.style.backgroundColor = 'red';
   // }
   function handleStart(){
-    setInterval(() => {
+   timerRef.current= setInterval(() => {
       setTime(time => time + 1)
     }, 1000);
   }
-  function handelStop(){}
-  function handelReset(){}
+  function handelStop(){
+    clearInterval(timerRef.current);
+    timerRef.current = null;
+  }
+  function handelReset(){
+    handelStop();
+    setTime(0);
+  }
   
   return (
     <div>
       <h1>Time in Seconts {time}</h1>
       <button onClick={handleStart}> Start</button>
       <br></br>
-      <button onClick={handelStop}> Start</button>
+      <button onClick={handelStop}> Stop</button>
       <br></br>
-      <button onClick={handelReset}> Start</button>
+      <button onClick={handelReset}> Reset</button>
       {/* <button ref={btnRef} onClick={handlRef}>a</button>
       <br />
       <button onClick={changeColor}>color change</button> */}
