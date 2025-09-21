@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import './App.css'
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
     return num*2
   }
 
-  const calculation = complexCalculate(input)
+  let calculation = useMemo(() => complexCalculate(input)
+,[input])
 
   return (
    <div>
