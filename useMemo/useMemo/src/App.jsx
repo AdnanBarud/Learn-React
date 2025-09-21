@@ -8,7 +8,7 @@ function App() {
   function complexCalculate(num) {
     console.log('Calculating...')
     for(let i=0; i<=1000000000; i++) {}
-    return num*2
+    return num*2x
   }
 
   let calculation = useMemo(() => complexCalculate(input)
