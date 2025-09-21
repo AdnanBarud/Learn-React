@@ -20,7 +20,7 @@ function App() {
     <button onClick={() => setCount(count+1)}>increment</button>
     <br />
     <input type="number" value={input} onChange={(e) => setInput(e.target.value)} />
-    <br />
+    <br /><br />
     number: {calculation}
    </div>
   )
