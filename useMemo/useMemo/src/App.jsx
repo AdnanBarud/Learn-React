@@ -18,10 +18,10 @@ function App() {
    <div>
     <h1>Count: {count}</h1>
     <button onClick={() => setCount(count+1)}>increment</button>
-    <br />
-    <input type="number" value={input} onChange={(e) => setInput(e.target.value)} />
     <br /><br />
-    number: {calculation}
+    <input type="number" value={input} onChange={(e) => setInput(e.target.value)} />
+    <br />
+    <h2>number: {calculation}</h2>
    </div>
   )
 }
