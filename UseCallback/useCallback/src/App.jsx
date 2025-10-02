@@ -9,6 +9,13 @@ function App() {
   return (
    <div>
     Hello World
+    useCallback(
+      () => {
+        first
+      },
+      [second],
+    )
+    
    </div>
   )
 }
